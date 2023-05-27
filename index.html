@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miao Lin - eBook</title>
+    <!-- 引入bootstrap的Css文件 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- 引入awesome的图标 -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- 引入自定义的Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 引入自定义js -->
+    <script src="js/Script.js"></script>
+
+
+</head>
+    <video src="media/bgm2.mp3" autoplay hidden></video>
+
+
+<body>
+    <!-- 导航条 -->
+    <nav class="navbar navbar-fixed-top" id="nav">
+        <div class="container">
+            <div class="navbar-header">
+
+                <div class="toolbar right">
+                    <button type="button" class="navbar-toggle btnuser" data-toggle="modal" data-target="#myModal">
+                        <i class="fa fa-user"></i>
+                    </button>
+
+                    <button type="button" class="navbar-toggle collapsed" id="navbtn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <i class="fa fa-navicon fa-1x" id="navicon"></i>
+                        <i class="fa fa-times fa-1x" id="navicon"></i>
+
+                    </button>
+
+                </div>
+
+
+                <a class="navbar-brand logo" href="#">
+                    <!-- logo -->
+                    <i class="fa fa-book" aria-hidden="true" ></i>
+                    <span>Miao Lin</span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" id="navbar">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#menu">menu</a></li>
+                    <li><a href="#gallery">gallery</a></li>
+                    <li><a href="#reviews">reviews</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- 焦点图模块 -->
+    <section class="home" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="jumbotron">
+                    <div class="col-md-6">
+                        <h2><small>Literary Bytes</small></h2>
+                        <h1>Expand Your Literary Horizons: Dive into Our Vast Ebook Collection.</h1>
+                        <p><a class="btn btn-primary btn-lg" href="#" role="button">get started</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 关于模块 -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 hidden-xs">
+                    <img class="img-responsive" src="images/图片1Tz1.jpg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h2><small>why choose us?</small></h2>
+                    <h2> Infinite Book Sea, Free and Fast</h2>
+                    <p class=""> Rich and diverse, millions of books in technology, industry, and literature, supporting free high-speed downloads.</p>
+
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">read more</a></p>
+
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-md-4 icon-box">
+                            <div class="icons text-center">
+                                <i class="fa fa-university fa-3x" aria-hidden="true" ></i>
+                                <p>Best salad</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-4 icon-box">
+                            <div class="icons text-center">
+                                <i class="fa fa-creative-commons fa-3x" aria-hidden="true"></i>
+                                <p>Best salad</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-4 icon-box">
+                            <div class="icons text-center">
+                                <i class="fa fa-gratipay fa-3x" aria-hidden="true"></i>
+                                <p>Best salad</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 菜单模块(menu) -->
+    <!-- 页头 -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="page-header">
+                <h1>Our Menu</h1>
+            </div>
+
+            <div class="row">
+                <!-- 第一个菜单 -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <img class="img-responsive" src="images/数据结构王道 TZ.jpg" alt="...">
+                            <h3>《数据结构》考研复习指导</h3>
+                            <p>《王道数据结构》是一本经典的计算机科学教材，由知名作者编写，由某出版社出版。该教材致力于讲解数据结构的基本概念、算法和应用，是学习和理解数据结构领域的重要参考书之一。
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- 第二个菜单 -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <img class="img-responsive" src="images/操作系统.jpg" alt="...">
+                            <h3>《现代操作系统》第四版</h3>
+                            <p>《现代操作系统》第四版是一本经典的计算机科学教材，详细介绍了现代操作系统的原理、设计和实现。它由Andrew S. Tanenbaum和Herbert Bos合著，由Pearson Education出版。
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- 第三个菜单 -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <img class="img-responsive" src="images/计算机组成原理.jpg" alt="...">
+                            <h3>《计算机组成原理》</h3>
+                            <p>《计算机组成原理》是一本经典的计算机科学教材，主要讲解计算机系统的基本组成和工作原理。它涵盖了计算机硬件的各个方面，包括处理器、存储器、输入输出设备和总线系统等。
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- 第四个菜单 -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <img class="img-responsive" src="images/Cpp.jpg" alt="...">
+                            <h3>C++ Primer Plus(第6版)</h3>
+                            <p>它是一本广泛使用的C++编程教材，它由Stephen Prata撰写，并由某出版社出版。该书旨在教授C++编程的基础知识和技能，并通过实例和练习帮助读者理解和应用C++语言的各个方面。
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- 第五个菜单 -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <img class="img-responsive" src="images/TCP.jpg" alt="...">
+                            <h3>TCP/IP详解</h3>
+                            <p>《TCP详解卷3》是由Douglas E. Comer撰写的一本计算机网络书籍，重点讲解TCP/IP协议栈中的TCP协议。该书作为《TCP/IP详解》系列的第三卷，深入探讨了TCP协议的原理、设计和实现细节。
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- 第六个菜单 -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <img class="img-responsive" src="images/C.jpg" alt="...">
+                            <h3>C Primer Plus(第6版)中文版</h3>
+                            <p>《C Primer Plus》第六版是一本广泛使用的C语言编程教材，由Stephen Prata撰写。该教材旨在教授C语言的基础知识和编程技巧，并通过实例和练习帮助读者掌握C语言的核心概念和编程实践。
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 第七个菜单 -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <img class="img-responsive" src="images/计算机导论 (1).jpg" alt="...">
+                            <h3>计算机科学导论(第3版)</h3>
+                            <p>它是一本面向计算机科学专业学生的教材，旨在引导读者系统地学习和理解计算机科学的基本概念和原理。这本书的内容包括计算机硬件和软件的基本知识、计算机网络、数据库、算法和数据结构、编程语言等方面的介绍。
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 第八个菜单 -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <img class="img-responsive" src="images/计算机网络.jpg" alt="...">
+                            <h3>计算机网络：自顶向下方法（第7版）</h3>
+                            <p>它是一本经典的计算机网络教材，广泛用于计算机科学、电信工程和信息技术等相关专业的教学和学习。该书以自顶向下的方式介绍计算机网络的概念、协议和技术，帮助读者逐步理解网络的各个层次和功能。
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- 第九个菜单 -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <img class="img-responsive" src="images/自控力.jpg" alt="...">
+                            <h3>自控力（The Willpower Instinct）</h3>
+                            <p>此书是由凯利·麦戈尼格尔（Kelly McGonigal Ph.D）撰写的一本心理学书籍，它深入探讨了自我控制力的科学原理和实践方法。该书通过结合心理学、神经科学和行为经济学的研究，帮助读者理解自控力的本质，并提供了有效的策略和技巧来增强自我控制力。
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 相册模块(gallery) -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="page-header">
+                <h1>gallery</h1>
+            </div>
+            <div class="row">
+                <!-- 第1个照片 -->
+                <div class="col-sm-6 col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img class="img-responsive" src="images/图书搜索.jpg" alt="...">
+
+                        <div class="content">
+                            <h3>书籍和文章检索</h3>
+                            <p>全面的跨域搜索图书和文章，通过文字分析和个性化推荐提供准确的搜索结果。
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </div>
+                    </a>
+                </div>
+                <!-- 第2个照片 -->
+                <div class="col-sm-6 col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img class="img-responsive" src="images/文章.jpg" alt="...">
+
+                        <div class="content">
+                            <h3>研究型期刊</h3>
+                            <p>内容丰富，多领域覆盖，满足各学科需求，促进学术交流和知识进步。
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </div>
+                    </a>
+                </div>
+                <!-- 第3个照片 -->
+                <div class="col-sm-6 col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img class="img-responsive" src="images/介绍及下载.jpg" alt="...">
+
+                        <div class="content">
+                            <h3>图书资源与下载平台</h3>
+                            <p>介绍了一个提供图书资源和下载服务的平台，便捷获取丰富的书籍信息和下载所需的图书。
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </div>
+                    </a>
+                </div>
+                <!-- 第4个照片 -->
+                <div class="col-sm-6 col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img class="img-responsive" src="images/APP应用.jpg" alt="...">
+
+                        <div class="content">
+                            <h3>独立移动应用程序</h3>
+                            <p>介绍了一款独立的移动应用程序，提供便捷的功能和服务。
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </div>
+                    </a>
+                </div>
+                <!-- 第5个照片 -->
+                <div class="col-sm-6 col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img class="img-responsive" src="images/下载记录.jpg" alt="...">
+
+                        <div class="content">
+                            <h3> 下载历史与智能推荐</h3>
+                            <p>讲述了一个具备下载历史记录和智能推荐分析功能的平台，为用户提供个性化的推荐服务。
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </div>
+                    </a>
+                </div>
+                <!-- 第6个照片 -->
+                <div class="col-sm-6 col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img class="img-responsive" src="images/VIP.jpg" alt="...">
+
+                        <div class="content">
+                            <h3> 用户身份特权对比</h3>
+                            <p>探讨了VIP和非VIP用户在平台上享有的不同权限和待遇，以及对用户体验和服务的影响。
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 反馈模块 -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="page-header">
+                <h1>Reviews</h1>
+            </div>
+            <div class="row">
+                <!-- 第1个反馈 -->
+                <div class="col-md-4">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <img class="img-responsive" src="images/ComputerFather.jpg" alt="...">
+                            <h3>Father of Computers</h3>
+                            <p>Charles Babbage, the pioneer of computer science, designed the Difference Engine and the Analytical Engine, earning him the title "Father of Computers.</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- 第2个反馈 -->
+                <div class="col-md-4">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <img class="img-responsive" src="images/CFather.jpg" alt="...">
+                            <h3>Father of C Programming</h3>
+                            <p>The Father of C Programming, he led and designed the C language, profoundly influencing computer programming and system software development.</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- 第3个反馈 -->
+                <div class="col-md-4">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <img class="img-responsive" src="images/InternetFather.jpg" alt="...">
+                            <h3>"Father of the Internet</h3>
+                            <p>Tim Berners-Lee invented the World Wide Web, driving the development of the Internet and making significant contributions to the modern Information Age.</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系模块 -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="page-header">
+                <h1>Contact</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="icons text-center">
+                        <i class="fa fa-phone fa-3x"></i>
+                        <h3>Phone</h3>
+                        <p>+1 617-253-1000</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="icons text-center">
+                        <i class="fa fa-envelope-o fa-3x"></i>
+                        <h3>Email</h3>
+                        <p>zhang266126@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="icons text-center">
+                        <i class="fa fa-map fa-3x"></i>
+                        <h3>Address</h3>
+                        <p>Cambridge, Massachusetts, USA</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 地图 -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="map">
+                        <iframe src="map.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <h3>Get in Touch</h3>
+                        <form action="" method="post">
+                            <input class="form-control" type="text" placeholder="Name" name="" id="">
+                            <input class="form-control" type="email" placeholder="Email" name="" id="">
+                            <input class="form-control" type="text" placeholder="Phone" name="" id="">
+                            <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Message" style="width:657px; height:147px;"></textarea>
+                            <input class="btn btn-default btn-lg" type="submit" value="Send Message">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 八、文章模块(post) -->
+    <section class="post" id="post">
+        <div class="container">
+            <div class="page-header">
+                <h1>post</h1>
+            </div>
+            <div class="cow">
+                <!-- 文章1 -->
+                <div class="col-md-3">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <div class="imgbox"><img class="img-responsive" src="images/post1.jpg" alt="..."></div>
+                            <h3>Blog Title Goes Here.</h3>
+                            <p>Il s'agit du texte de la description du produit, qui est édité en fonction du contenu.
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- 文章2 -->
+                <div class="col-md-3">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <div class="imgbox"><img class="img-responsive" src="images/post2.jpg" alt="..."></div>
+                            <h3>Blog Title Goes Here.</h3>
+                            <p>Il s'agit du texte de la description du produit, qui est édité en fonction du contenu.
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- 文章3 -->
+                <div class="col-md-3">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <div class="imgbox"><img class="img-responsive" src="images/post3.jpg" alt="..."></div>
+                            <h3>Blog Title Goes Here.</h3>
+                            <p>Il s'agit du texte de la description du produit, qui est édité en fonction du contenu.
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- 文章4 -->
+                <div class="col-md-3">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <div class="imgbox"><img class="img-responsive" src="images/post4.jpg" alt="..."></div>
+                            <h3>Blog Title Goes Here.</h3>
+                            <p>Il s'agit du texte de la description du produit, qui est édité en fonction du contenu.
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 九、新闻模块(newsletter) -->
+    <section class="newsletter" id="newsletter">
+        <div class="container">
+
+            <h3>newsletter</h3>
+            <p>subscribe for latest upadates</p>
+
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+
+                    <form action="">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="enter your email">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">subscribe</button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 十、页脚模块(footer) -->
+    <section class="footer" id="footer">
+        <div class="container">
+            <footer id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="text-center">
+                                <h1>Miao Lin - eBook</h1>
+                                <p>Created By <a href="">Ms. Lin Miao</a> Engineer | All Rights Reserved!</p>
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-4">
+                                        <div class="icons text-center">
+                                            <i class="fa fa-wechat fa-1x"></i>
+                                            <i class="fa fa-qq fa-1x"></i>
+                                            <i class="fa fa-facebook fa-1x"></i>
+                                            <i class="fa fa-twitter fa-1x"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </section>
+
+
+    <!-- 登录模块 -->
+    <!-- 按钮 -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Launch demo modal
+    </button>
+
+    <!-- 弹窗 -->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+
+
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <input class="form-control" type="email" placeholder="enter your email" name="" id="">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="password" placeholder="enter your password" name="" id="">
+                        </div>
+                        <div class="form-txt">
+                            <div class="row">
+                                <div class="col-md-1 col-sm-1 col-xs-1">
+                                    <input type="checkbox" id="remenber" aria-label="...">
+                                </div>
+                                <div class="col-md-7 col-sm-7 col-xs-7">
+                                    <label for="remenber">remenber me</label>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <a href="">forgot password?</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 引入框架js -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

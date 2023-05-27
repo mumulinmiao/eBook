@@ -1,0 +1,364 @@
+/* 全局样式 */
+
+/* 通用样式 */
+* {
+    font-family: 'Montserrat', sans-serif;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+/* HTML 样式 */
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+/* 超链接样式 */
+a {
+    text-decoration: none;
+    color: rgb(81, 42, 16);
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(122, 49, 0);
+}
+
+/* 导航栏样式 */
+nav {
+    padding: 4rem 0;
+}
+
+nav .logo {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav .navbar-toggle {
+    margin: 0;
+}
+
+nav .fa-navicon,
+nav .fa-times,
+nav .fa-user {
+    margin-top: 1rem;
+}
+
+nav li a {
+    color: #fff;
+}
+
+nav.active {
+    background-color: #090909;
+    padding: 0;
+}
+
+nav button i {
+    color: #fff;
+}
+
+nav .container {
+    position: relative;
+}
+
+nav .navbar-nav {
+    margin: 0 3rem;
+}
+
+nav .toolbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+nav .toolbar .btnuser {
+    display: block;
+}
+
+/* 菜单模块 */
+.menu,
+.reviews,
+.post {
+    background-color: aliceblue;
+}
+
+.menu .thumbnail,
+.reviews .thumbnail,
+.post .thumbnail {
+    background-color: transparent;
+    padding: 3rem 2rem;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu .thumbnail img{
+    height: 15rem;
+    /* border-radius: 15%; */
+    transform-origin: center center;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+/* .menu .thumbnail img, */
+.reviews .thumbnail img {
+    height: 15rem;
+    border-radius: 50%;
+    transform-origin: center center;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.menu .thumbnail:hover img,
+.reviews .thumbnail:hover img {
+    transform: rotate(360deg);
+}
+
+.menu .thumbnail .content,
+.reviews .thumbnail .content,
+.post .thumbnail .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    border: 0.1rem solid #141312;
+    line-height: 2.8rem;
+    padding: 3rem 2rem;
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.menu .thumbnail:hover .content,
+.reviews .thumbnail:hover .content,
+.post .thumbnail:hover .content {
+    transform: translateY(0);
+}
+/* 相册模块 */
+
+.gallery .thumbnail {
+    position: relative;
+    margin: 0;
+    border: none;
+    height: 25rem;
+    width: 20rem;
+    margin-bottom: 3rem;
+    border-radius: 0;
+    overflow: hidden;
+    align-items: center;
+    perspective: 1000px;  /* 设置透视效果 */
+}
+
+.gallery .thumbnail img {
+    width: 100%;
+    height: 25rem;
+    -webkit-transition: all .3s ease-in-out;  /* 添加图片过渡效果 */
+    transition: all .3s ease-in-out;
+    transform-origin: center;  /* 设置旋转的中心点为图片中心 */
+    transform-style: preserve-3d;  /* 保持3D效果 */
+}
+
+.gallery .thumbnail:hover img {
+    transform: rotateY(360deg);  /* 鼠标悬停时匀速旋转360度 */
+}
+
+.gallery .thumbnail .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    border: 0.1rem solid #512a10;
+    line-height: 2.8rem;
+    padding: 3rem 2rem;
+    background-color: rgba(0, 0, 0, 0.7);  /* 添加半透明黑色背景 */
+    width: 100%;
+    height: 100%;
+    opacity: 0;  /* 初始状态下完全透明 */
+    transform: translateY(0) translateZ(50px);  /* 抬升文本并设置Z轴偏移 */
+    -webkit-transition: opacity .3s ease-in-out;  /* 添加过渡效果 */
+    transition: opacity .3s ease-in-out;
+    color: #fff;  /* 文本颜色设置为白色 */
+}
+
+.gallery .thumbnail:hover .content {
+    opacity: 1;  /* 鼠标悬停时显示文字背景和文本 */
+}
+
+
+/* 联系模块 */
+.contact .icons {
+    border: 0.1rem solid #512a10;
+    padding: 4rem 2rem 3rem;
+}
+
+.contact .info {
+    margin-bottom: 4rem;
+}
+
+.contact iframe {
+    margin-top: 4rem;
+    height: 39.5rem;
+}
+
+.contact h3 {
+    margin-top: 4rem;
+}
+
+.contact .form-control {
+    margin: 0.7rem 0;
+    padding: 1.2rem 1.4rem;
+    height: auto;
+}
+
+/* 文章模块 */
+.post {
+    padding: 0 0 4rem 0;
+}
+
+.post .thumbnail {
+    padding: 0 0 3rem 0;
+}
+
+.post .imgbox {
+    height: 20rem;
+    overflow: hidden;
+}
+
+.post .thumbs:hover {
+    transform: translateY(0);
+}
+
+.post .thumbs:hover img {
+    transform: scale(0.9);
+}
+
+/* 首页模块 */
+.home {
+    background: url(../images/kjbj2TZ.jpg) top center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home .jumbotron {
+    overflow: hidden;
+    padding: 20rem 0;
+    background-color: transparent;
+}
+
+.home h1 {
+    color: #fff;
+}
+
+/* 关于模块 */
+.about .container p {
+    line-height: 3.5rem;
+}
+
+.about .container .btn {
+    margin: 3rem 0;
+}
+
+.about .icon-box .icons {
+    background-color: #eee;
+    padding: 2.5rem 0 0.5rem;
+}
+
+/* 页面标题样式 */
+section .page-header {
+    text-align: center;
+}
+
+/* 新闻订阅模块 */
+.newsletter {
+    background-image: url(../images/广告框2.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 2rem 0 4rem 0;
+}
+
+.newsletter h3 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.newsletter .input-group-btn {
+    background-color: #fff;
+}
+
+.newsletter .form-control,
+.newsletter .btn {
+    height: 6rem;
+}
+
+/* 页脚样式 */
+footer {
+    padding: 2rem 0 4rem 0;
+}
+
+footer .icons i.fa {
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border: 0.1rem solid #512a10;
+    color: #512a10;
+}
+
+/* 响应式布局 */
+@media (max-width: 991px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 0;
+    }
+
+    nav .navbar-nav {
+        background-color: #fff;
+    }
+
+    nav a.logo {
+        padding: 2rem 1.5rem 0;
+    }
+
+    nav .navbar-toggle {
+        padding: 1.5rem 1.5rem 0;
+    }
+
+    nav .navbar-collapse {
+        padding: 0 0.5rem;
+    }
+
+    nav .nav {
+        margin: 0;
+    }
+
+    nav .nav a {
+        padding: 1rem 1.5rem;
+        color: #512a10;
+    }
+
+    .home .jumbotron {
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .home .jumbotron {
+        text-align: center;
+    }
+
+    html {
+        font-size: 50%;
+    }
+}
